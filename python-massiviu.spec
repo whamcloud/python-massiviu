@@ -10,7 +10,7 @@ License:        BSD
 URL:            https://github.com/weholt/massiviu
 Source0:        https://files.pythonhosted.org/packages/f2/94/48ccceea0c930a0729716b61069b4cd36d8f7a1f35474c614a66174319f4/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
-Patch1:         48b5be92a7e96a689f0e46cfa007faf2e09e1554.patch
+Patch1:         massiviu.patch
 
  
 BuildRequires:  python2-devel
