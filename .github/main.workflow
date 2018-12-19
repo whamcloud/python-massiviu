@@ -4,6 +4,6 @@ workflow "New workflow" {
 }
 
 action "Start Mock Container" {
-  uses = "actions/docker/cli@76ff57a"
-  args = "docker run -dit --name mock -v $(pwd):/mockdir --cap-add=SYS_ADMIN --privileged imlteam/mock"
+  uses = "actions/docker/cli@master"
+  args = "run -dit --name mock -v $(pwd):/mockdir --cap-add=SYS_ADMIN --privileged imlteam/mock"
 }
