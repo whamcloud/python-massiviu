@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        MassivIU - Simplified "bulk" insert/update/delete for Django
 
 License:        BSD
@@ -15,6 +15,7 @@ Patch1:         massiviu.patch
  
 BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
+Obsoletes:  python-dse
 
 %description
 MassivIU "bulk" insert/update/delete for Django
@@ -79,5 +80,8 @@ rm -rf %{pypi_name}.egg-info
 %{python2_sitelib}/%{pypi_name}-%{version}-py?.?.egg-info
 
 %changelog
+* Fri Jan 25 2019 Joe Grund <jgrund@whamcloud.com> 0.1.0-2
+- Obsolete dse
+
 * Wed Dec 19 2018 Joe Grund <jgrund@whamcloud.com> 0.1.0-1
 - Initial package.
